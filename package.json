@@ -1,0 +1,26 @@
+{
+  "name": "nyang_talk_bot",
+  "version": "1.0.0",
+  "description": "Source from \"https://www.codingnepalweb.com/create-chatbot-html-css-javascript/\" post.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BbChip0103/nyang_talk_bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BbChip0103/nyang_talk_bot/issues"
+  },
+  "homepage": "https://github.com/BbChip0103/nyang_talk_bot#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  }
+}

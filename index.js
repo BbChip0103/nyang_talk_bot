@@ -21,6 +21,7 @@ const ROLE_PROMPT = process.env.ROLE_PROMPT;
 
 app.post('/api/chat', async (req, res) => {
   const userMessage = req.body.message;
+  console.log('Requested message:', userMessage);
 
   const requestOptions = {
     method: 'POST',
@@ -34,6 +35,7 @@ app.post('/api/chat', async (req, res) => {
   try {
     const response = await fetch(`${API_URL}?key=${API_KEY}`, requestOptions);
     const data = await response.json();
+    console.log('Gemini API Response:', data.candidates[0].content);
     if (!response.ok) throw new Error(data.error.message);
     res.json({ response: data.candidates[0].content.parts[0].text });
   } catch (error) {

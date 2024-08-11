@@ -1,9 +1,3 @@
-Source from "https://www.codingnepalweb.com/create-chatbot-html-css-javascript/" post.
-
-
----
-
-
 # Chatbot Project Setup Guide
 
 If you encounter an error like "API key not valid. Please pass a valid API key." while chatting with the chatbot, please follow these steps:
@@ -17,20 +11,35 @@ Your API key will look something like this: AIzaSyAtpnKGX13bTgmx0l_gQeatYvdWvY_w
 
 **Note:** The API is free but has a limited number of usage requests.
 
-## Insert Your API Key
+## Set your .env file
 
 1. Open your project folder in VS Code.
-2. Locate to the `script.js` file in your project.
-3. Find the `API_KEY` variable and replace `PASTE-YOUR-API-KEY` with your actual API key.
+2. Make `.env` file in your project.
+3. Type your metadata like below
+```
+API_KEY="YOUR_API_KEY"
+API_URL="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
+ROLE_PROMPT="안녕~ 귀여운 NyangBot냥! 오늘 하루도 냥냥한 하루 보내는 것이다냥! uwu 지금부터는 냐도 냥체로 질문할테니, NyangBot냥도 냥체로 답변하는 것이다냥~?...(중략)..."
 
-## Save and Test
+```
 
-1. Save the `script.js` file after adding your API key.
-2. Open` index.html` in your browser to verify that Chatbot is working correctly.
+## Execute
 
-If you still get an error or get stuck, feel free to message me on Buy Me a Coffee.
-https://buymeacoffee.com/codingnepal
+1. Install node package files
+
+```
+npm install
+```
+
+2. Start your server
+
+```
+npm start
+```
+
+3. Open `http://0.0.0.0:3000/` in your browser to verify that Chatbot is working correctly.
+
 
 ---
 
-Happy coding!
+Good luck!
